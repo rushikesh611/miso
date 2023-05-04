@@ -13,7 +13,12 @@ const Logo = () => {
     //   width="100"
     //   src="/images/logo.svg"
     // />
-    <h1 className="text-xl font-medium text-gray-500">MISO</h1>
+    <h1
+      onClick={() => router.push("/")}
+      className="text-xl font-medium text-gray-500 hover:cursor-pointer "
+    >
+      MISO
+    </h1>
   );
 };
 
