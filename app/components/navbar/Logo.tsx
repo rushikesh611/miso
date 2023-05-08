@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { BiPaperPlane } from "react-icons/bi";
 
 const Logo = () => {
   const router = useRouter();
@@ -13,12 +14,13 @@ const Logo = () => {
     //   width="100"
     //   src="/images/logo.svg"
     // />
-    <h1
+    <div
       onClick={() => router.push("/")}
-      className="text-xl font-medium text-gray-500 hover:cursor-pointer "
+      className="text-xl font-medium text-gray-500 hover:cursor-pointer flex flex-row items-center"
     >
-      MISO
-    </h1>
+      <BiPaperPlane />
+      <h1 className="ml-2">M I S O</h1>
+    </div>
   );
 };
 
